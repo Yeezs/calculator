@@ -28,7 +28,18 @@ namespace calculator
 
         private void NumericButton_Click(object sender, RoutedEventArgs e)
         {
-            Display.Text = "1";
+            Button button = (Button)sender;
+
+            if (Display.Text == "0")
+            {
+                Display.Text = button.Content.ToString();
+            }
+            else
+            {
+                Display.Text += button.Content.ToString();
+            }
+
+           
         }
     }
 }
