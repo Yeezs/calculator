@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
 
 namespace calculator
 {
@@ -39,27 +38,8 @@ namespace calculator
             {
                 Display.Text += button.Content.ToString();
             }
-        }
 
-        private void OperationButton_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = (Button)(sender);
-            Display.Text += button.Content.ToString();
-        }
-        private void ResultButton_Click(object sender, RoutedEventArgs e)
-        {
-            Button button = (Button)(sender);
-
-            DataTable dt = new DataTable();
-
-            string expression =(string)Display.Text;
-
-            var result = dt.Compute(expression, "");
-            Display.Text = result.ToString();
-        }
-        private void ClearButton_Click(object sender, RoutedEventArgs e)
-        {
-            Display.Text = "0";
+           
         }
     }
 }
