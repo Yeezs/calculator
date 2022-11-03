@@ -6,17 +6,24 @@
         xmlns:local="clr-namespace:calculator"
         mc:Ignorable="d"
         Title="Calculator" Height="400" Width="300">
-    <Grid>
+    <Grid Background="#FF4C4848">
         <TextBox x:Name="Display" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="280" Height="39" FontFamily="Bahnschrift" FontSize="32" TextAlignment="Right" Background="#FFE67BFF"/>
         <Button Content="1" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="97,70,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="183,70,0,0" VerticalAlignment="Top" Height="38" Width="66" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="97,129,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="183,129,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="97,182,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="184,182,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
-        <Button Content="0" HorizontalAlignment="Left" Margin="96,237,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="2" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" Height="38" Width="64" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="216,70,0,0" VerticalAlignment="Top" Height="38" Width="66" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="5" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Height="38" Width="64" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="216,118,0,0" VerticalAlignment="Top" Height="38" Width="64" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="8" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" Height="38" Width="64" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="217,167,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="0" HorizontalAlignment="Center" Margin="0,218,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFB982FF" FontFamily="Bahnschrift" FontSize="36" Click="NumericButton_Click"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFFF0606" FontFamily="Bahnschrift" FontSize="36" Click="ClearButton_Click"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="217,218,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFF51818" FontFamily="Bahnschrift" FontSize="36" Click="ResultButton_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFFF2525" FontFamily="Bahnschrift" FontSize="36" Click="OperationButton_Click"/>
+        <Button Content="-" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFFF2222" FontFamily="Bahnschrift" FontSize="36" Click="OperationButton_Click"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="217,269,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFFF1515" FontFamily="Bahnschrift" FontSize="36" Click="OperationButton_Click"/>
+        <Button Content="/" HorizontalAlignment="Center" Margin="0,322,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFFF2222" FontFamily="Bahnschrift" FontSize="36" Click="OperationButton_Click"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="217,322,0,0" VerticalAlignment="Top" Height="38" Width="65" Background="#FFDE2B2B" FontFamily="Bahnschrift" FontSize="36" Click="OperationButton_Click"/>
     </Grid>
 </Window>
